@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1280 Jewelry Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleContactUs.css">
+    <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+                
+</head>
+<body>
+    <!-- header section -->
+    <header class="header_section">
+        <div class="name">
+        <a class="navbar-link" href="index.html">
+            1280 Jewelry <!-- NAME OF COMPANY -->
+          </a>
+        </div>  
+            <ul class="navbar-menu"> 
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html"> About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="jewelry.html">Jewelry</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+    </header>
+    <!-- end header section -->
+
+
+
+  <!-- contact section -->
+
+  <section class="contactUs_section">
+        <div class="contact_div">
+            <h2>
+                Contact us to learn more
+            </h2>
+              <form action="https://formspree.io/f/mjkbgqyb" method="POST" class="contact_form" onsubmit="return sendMessage()">
+                <input type="text" id= "name_input" name="Name" placeholder="Full Name" required autofocus/>
+                <br>
+                <input type="tel" id= "phone_input" name="Phone"  placeholder="Phone number - (xxx) xxx-xxxx" pattern="\(?\d\d\d\)? ?\d\d\d-?\d\d\d\d"/>
+                <input type="email" id= "email_input" name="Email" placeholder="Email - name@example.com"  required />
+                <br>
+                <br>
+                <div class="radio_buttons">
+                    <!-- <div class="carpet"> -->
+                        <input type="radio" id="event_type1" name="Event Type" value="carpet_public_event"> 
+                        <label for="event_type1">Carpet/public event</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- </div>
+                    <div class="wedding"></div> -->
+                        <input type="radio" id="event_type2" name="Event Type" value="wedding"> 
+                        <label for="event_type2">Wedding</label>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <!-- </div>
+                    <div class="social"></div> -->
+                        <input type="radio" id="event_type3" name="Event Type" value="social_event"> 
+                        <label for="event_type3">Social Event</label>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <!-- </div> -->
+                </div>
+                <br>
+                <label for="event_date_input">Estimated event date: </label> 
+                <br>
+                <input type="date" id= "event_date_input" name="Event Date" placeholder="mm/dd/yyyy" />
+                <br>
+                <br>
+                <label for="event_details">Additional Information: </label> 
+                <br>
+                <textarea name="event_details" id="Event Details" cols="30" rows="10"> </textarea>
+                <br>
+                <button id="sendButton" class="send_message" type="submit">
+                  <p>SEND MESSAGE</p>
+                </button>
+            </form>
+        </div>
+        <!-- GOOGLE MAPS -->
+          <div class="map-supracontainer">
+            <p>Come visit us</p>
+              <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1303.3525230902883!2d-122.91589195927959!3d49.206154670339764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d871f5ee4dc9%3A0xf3a710065f3a2f3f!2sDouglas%20College%2C%20New%20Westminster%20Campus!5e0!3m2!1sen!2sca!4v1721616096819!5m2!1sen!2sca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+    </section>
+  <!-- end contact section -->
+
+
+ <!-- info section -->
+ <section class="info_section">
+    <div class="subscribe_section">   
+      <form action="https://formspree.io/f/xdknareo" method="POST" class="subscribe_form" onsubmit="return subscribe()">
+          <br>
+          <br>
+          <!-- email FOR SUBSCRIPTION -->
+          <h2>Subscribe for new collections announcements</h2>
+          <div class= "subscribe_email">
+            <input type="email" name="Subscription email" placeholder="Enter your email" required>
+          </div>
+        <button class="subscribe" type="submit">
+          <p><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp; 
+          SUBSCRIBE&nbsp;</p>
+        </button>
+      </form>
+  </div> 
+    <div class="social_box"> 
+      <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="info_links">
+      <hr>
+      <br>
+      <h4>
+        Navigate our Web
+      </h4>
+      <br>
+        <a href="index.html">
+          <i class= "fas fa-home" aria-hidden="true"> Home</i>
+        </a>
+        <br>
+        <a href="aboutUs.html">
+          <i class= "fas fa-info-circle" aria-hidden="true"> About Us</i>
+        </a>
+        <br>
+        <a href="jewelry.html">
+          <i class= "fas fa-ring" aria-hidden="true"> Jewelry</i>
+        </a>
+        <!-- <br>
+        <a href="contact.html">
+          <i class= "fas fa-envelope" aria-hidden="true"> Contact Us</i>
+        </a> -->
+        <br>
+      </div>
+  <div class="footer-contact-info">
+      <hr>
+      <br>
+      <h4>
+      Contact Information
+    </h4>
+    <br>
+      <a href="https://www.google.com/maps?ll=49.203568,-122.912689&z=17&t=m&hl=en&gl=CA&mapclient=embed&cid=17557019291880664895" target="_blank">
+        <i class="fas fa-map-marker-alt" aria-hidden="true"> 700 Royal Ave, New Westminster, BC</i>
+        <br>
+      </a>
+      <a href="">
+        <i class= "fas fa-phone" aria-hidden="true"> Call +01 1234567890</i>
+          <br>
+      </a>
+      <a href="">
+        <i class="fas fa-envelope"> 1280jewelry@gmail.com</i>
+        <br>
+      </a>
+    </div>
+</section>
+
+<!-- end info_section -->
+
+
+<!-- footer section -->
+<footer>
+<p>
+  &copy; <span id="displayYear"></span> All Rights Reserved By
+  <a href="https://html.design/">Free Html Templates www.free-css.com</a>
+</p>
+</footer>
+<!-- footer section -->
+
+
+<!-- custom js -->
+<script src="scripts.js"></script>
+
+<!-- used template:  https://www.free-css.com/free-css-templates/page293/chocolux -->
+</body>
+</html>

@@ -1,0 +1,223 @@
+.heading-container h1 {
+    text-align: center;
+    font-family: 'Apple Chancery', cursive;
+    font-size: 2em;
+    color: black;
+    /* margin: 10px; */
+}
+
+.jewelry-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 60px;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: auto;
+    padding: 40px;
+    box-sizing: content-box;
+}
+
+div.jewelry-container .box {
+    background-color: white;
+}
+
+div.jewelry-container .name {
+    color: black;
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.img-box img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+div.detail-box {
+    color: white;
+    font-size: 1.3em;
+    padding: 40px 0px 20px 0px;
+}
+
+div.detail-box a {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.bottom-container h3 {
+    color: #333;
+    margin: 40px 0px 50px;
+    font-size: 1.5em;
+}
+
+.bottom-container a {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+}
+
+ /* Responsiveness */
+@media (max-width: 467px) { /*Small Mobile*/ 
+
+    .jewelry-container {
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+        padding: 30px;
+        gap: 35px;
+    }
+
+    div.jewelry-container .hide {
+        display: none;
+    }
+
+    .heading-container h1 {
+        font-size: 1.2em;
+    }
+
+    div.jewelry-container .name {
+        margin: 10px;
+        font-size: 1.0em;
+    }
+
+    .img-box img {
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+    }
+
+    div.detail-box {
+        font-size: 0.9em;
+        padding: 40px 0px 20px 0px;
+    }
+
+    div.detail-box a {
+        border-radius: 5px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .bottom-container h3 {
+        font-size: 1.0em;
+    }
+
+    .bottom-container a {
+        border-radius: 5px;
+    }
+
+
+}
+
+@media (min-width: 468px) and (max-width: 767px) { /*Big Mobile*/ 
+
+    .jewelry-container {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        padding: 30px;
+        gap: 35px;
+    }
+
+    div.jewelry-container .box {
+        flex: 20%;
+    }
+
+    .heading-container h1 {
+        font-size: 1.4em;
+    }
+
+    div.jewelry-container .name {
+        margin: 10px;
+        font-size: 1.1em;
+    }
+
+    .img-box img {
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+    }
+
+    div.detail-box {
+        font-size: 1em;
+        padding: 40px 0px 20px 0px;
+    }
+
+    div.detail-box a {
+        border-radius: 5px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .bottom-container h3 {
+        font-size: 1.1em;
+    }
+
+    .bottom-container a {
+        border-radius: 5px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { /*TABLET*/ 
+    .jewelry-container {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        padding: 30px;
+        gap: 35px;
+    }
+
+    div.jewelry-container .box {
+        flex: 30%;
+    }
+
+    .heading-container h1 {
+        font-size: 1.8em;
+    }
+
+    div.jewelry-container .name {
+        margin: 10px;
+        font-size: 1.3em;
+    }
+
+    div.detail-box {
+        font-size: 1.1em;
+        padding: 40px 0px 20px 0px;
+    }
+
+    div.detail-box a {
+        border-radius: 5px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .bottom-container h3 {
+        font-size: 1.3em;
+    }
+
+    .bottom-container a {
+        border-radius: 5px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 3024px) { /* DESKTOP*/ 
+    .jewelry-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 60px;
+    }
+}

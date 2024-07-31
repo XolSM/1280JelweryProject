@@ -1,0 +1,270 @@
+/* Main section layout using CSS Grid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+html{
+    display: flex;
+    font-family: 'Apple Chancery', sans-serif;
+    background-color: white;
+    text-align: center;
+    align-items: flex-end;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    line-height: 1.6;
+    padding: 0 10px;
+
+}
+
+.landingPage_slider_section {
+    background-color: black;
+    color: white;
+    gap: 10px; 
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.slider-container {
+    grid-area: slider;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2em;
+}
+
+.slider {
+    display: flex; 
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    flex: 1;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 7%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.slide-content {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.slide h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slide p {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.slide-image {
+    flex: 1;
+    text-align: center;
+}
+
+.slide-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 1px;
+}
+
+.next {
+    right: 15px;
+}
+
+.landing_aboutUs_section{
+    margin-top: 1px;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr; 
+    grid-template-areas: 
+                        'aboutUs    aboutUs         aboutImg';
+    gap: 10px; 
+    border-radius: 10px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.landing_aboutUs_div{
+    grid-area: aboutUs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 1.5em;
+    
+}
+
+.landing_readMore {
+    font-weight: bold;
+}
+
+.landing_aboutUs_img{
+    grid-area: aboutImg;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 467px) { /*Small Mobile*/ 
+    .landingPage_slider_section {
+        gap: 5px; 
+        border-radius: 5px;
+        padding-left: 10px;
+        text-align: justify;
+        font-size: 0.6em;
+    }
+    
+    .slide-content {
+        padding: 0 5px;
+    }
+    
+    .slide p {
+        font-size: 2.5em;
+    }
+    
+    .prev, .next {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    
+    .landing_aboutUs_section{
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+                            'aboutUs'
+                            'aboutImg';
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    
+    .landing_aboutUs_div{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    .landing_aboutUs_img{
+        width: 100%;
+    }
+
+  }
+
+  @media (min-width: 468px) and (max-width: 767px) { /*Big Mobile*/ 
+    .landingPage_slider_section {
+        gap: 5px; 
+        border-radius: 5px;
+        padding-left: 10px;
+        text-align: justify;
+        font-size: 0.7em;
+    }
+    
+    .slide-content {
+        padding: 0 10px;
+    }
+    
+    .slide p {
+        font-size: 2.8em;
+    }
+    
+    .prev, .next {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    
+    .landing_aboutUs_section{
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+                            'aboutUs'
+                            'aboutImg';
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    
+    .landing_aboutUs_div{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    .landing_aboutUs_img{
+        width: 70%;
+        margin: auto;
+    }
+  }
+
+
+@media (min-width: 768px) and (max-width: 1023px) { /*TABLET*/ 
+
+    .landingPage_slider_section {
+        gap: 5px; 
+        border-radius: 5px;
+        padding-left: 10px;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+    
+    .slide-content {
+        padding: 0 10px;
+    }
+    
+    .slide p {
+        font-size: 3em;
+    }
+    
+    .prev, .next {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    
+    .landing_aboutUs_div{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.3em;
+    }
+  }

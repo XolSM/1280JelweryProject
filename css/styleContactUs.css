@@ -1,0 +1,186 @@
+/* Main section layout using CSS Grid */
+.contactUs_section {
+    background-color: black;
+    color: white;
+    display: grid;
+    width: 100%;
+    margin: auto;
+}
+
+.contact_div, .map-supracontainer {
+    background-color: black;
+}
+
+.contact_div {
+    grid-area: contact;
+    width: 100%;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+
+/* size to fix*/
+.name_input, .email_input, .phone_input{
+    width: 90%;
+}
+
+.radio_buttons{
+    display: flex;
+    justify-content: center; 
+    gap: 5px;
+
+}
+
+/* TexArea */
+#event_details { 
+    border-radius: 5px;
+    text-align: left;
+    font: inherit;
+}
+
+.send_message{
+    height: 20px;
+    width: 120px;
+    font-weight: bold;
+    border: 2px solid rgb(135, 131, 131);
+}
+
+.send_message:hover {
+    border: 3px solid rgb(135, 131, 131);
+}
+
+  /* GOOGLE MAPS STARTS */
+
+.map-supracontainer {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    grid-area: map;
+    padding: 0 50px;
+    margin: auto;
+}
+
+/* GOOGLE MAPS END */
+
+#name_input, #phone_input, #email_input {
+    width: 50%;
+}
+
+/* Responsiveness */
+
+
+@media (max-width: 467px) { /*Small Mobile*/ 
+    .contactUs_section {
+        padding-top: 20px;
+        grid-template-areas: 
+                            'contact'
+                            'map';
+        gap: 10px; 
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+    
+    .radio_buttons{
+        display: flex;
+        justify-content: center; 
+        gap: 3px;
+        padding-left: 5px;
+        font-size: 0.9em;
+    }
+    
+    /* TexArea */
+    #event_details { 
+        border-radius: 5px;
+        text-align: left;
+        font: inherit;
+    }
+    
+      /* GOOGLE MAPS STARTS */
+    
+    .map-supracontainer {
+        padding: 0 30px;
+        margin: auto;
+    }
+
+    #googleMap{
+        width: 280px;
+        height: 200px;
+    }
+    
+    /* GOOGLE MAPS END */
+    
+    #name_input, #phone_input, #email_input {
+        width: 70%;
+    }
+
+  }
+
+  @media (min-width: 468px) and (max-width: 767px) { /*Big Mobile*/ 
+    .contactUs_section {
+        padding-top: 20px;
+        grid-template-areas: 
+                            'contact'
+                            'map';
+        gap: 10px; 
+        border-radius: 5px;
+    }
+   
+    .radio_buttons{
+        gap: 2px;
+    
+    }
+    .map-supracontainer {
+        font-size: 1.2em;
+        padding: 0 30px;
+        margin: auto;
+    }
+
+    #googleMap{
+        width: 350px;
+        height: 200px;
+    }
+  }
+
+
+@media (min-width: 768px) and (max-width: 1024px) { /*TABLET*/ 
+    .contactUs_section {
+        padding-top: 20px;
+        grid-template-columns: 3fr 2fr; 
+        grid-template-areas: 
+                            'contact    map';
+        gap: 20px; 
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+
+    .map-supracontainer {
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    #googleMap{
+        width: 350px;
+        height: 300px;
+    }
+
+  }
+
+
+@media (min-width: 1024px) and (max-width: 3024px) { /* DESKTOP*/  
+    .contactUs_section {
+        padding-top: 20px;
+        grid-template-columns: 3fr 2fr; 
+        grid-template-areas: 
+                            'contact    map';
+        gap: 20px; 
+        border-radius: 10px;
+    } 
+
+    #googleMap{
+        width: 500px;
+        height: 450px;
+    }
+
+}
+
+
