@@ -52,13 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-function sendMessage(){
-    document.querySelector('.contact_div').innerHTML = '<h2> Form sent! <br> We will contact you within 48hr </h2>';
-    return false;
-}
+// function sendMessage(){
+//     document.querySelector('.contact_div').innerHTML = '<h2> Form sent! <br> We will contact you within 48hr </h2>';
+//     return false;
+// }
 
-function subscribe(){
-    document.querySelector('.subscribe_form').innerHTML = '<p>SUBSCRIBED!</p>';
-    return false;
-}
+// function subscribe(){
+//     document.querySelector('.subscribe_form').innerHTML = '<p>SUBSCRIBED!</p>';
+//     return false;
+// }
 
